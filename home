@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy Policy - haaPEBET</title>
+    <style>
+      body {
+        font-family: "Roboto Mono", monospace;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(
+          to bottom,
+          hsl(61, 73%, 78%),
+          rgb(192, 253, 202)
+        );
+      }
+
+      @font-face {
+        font-family: "Roboto Mono";
+        font-style: normal;
+        font-weight: 400;
+        src: url("fonts/roboto-mono-v12-latin-regular.eot"); /* IE9 Compat Modes */
+        src: local("Roboto Mono"), local("RobotoMono-Regular"),
+          url("fonts/roboto-mono-v12-latin-regular.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */ url("fonts/roboto-mono-v12-latin-regular.woff2")
+            format("woff2"),
+          /* Super Modern Browsers */
+            url("fonts/roboto-mono-v12-latin-regular.woff") format("woff"),
+          /* Modern Browsers */ url("fonts/roboto-mono-v12-latin-regular.ttf")
+            format("truetype"),
+          /* Safari, Android, iOS */
+            url("fonts/roboto-mono-v12-latin-regular.svg#RobotoMono")
+            format("svg"); /* Legacy iOS */
+      }
+
+      h2 {
+        color: #333;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px 0 20px 0;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 8px;
+        }
+      }
+
+      @media (max-width: 3000px) {
+        body {
+          font-size: 10px;
+        }
+      }
+
+      h1,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 500;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 40px 0 20px;
+        color: #222;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 20px 0 10px;
+        color: #444;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+      }
+
+      ul {
+        margin: 0 10px 5px 50px;
+        padding: 0;
+      }
+
+      li {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      code {
+        background-color: #f4f4f4;
+        border-radius: 3px;
+        font-family: monospace;
+        padding: 2px 4px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      div {
+        margin: 10px auto 50px auto;
+        padding: 0 10px 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Privacy Policy</h1>
+    <p>
+      At PEBET, we are committed to protecting the privacy and security of our
+      users, especially children. This Privacy Policy explains how we collect,
+      use, and share information about you when you use our mobile application
+      (the "App") and any related services provided by PEBET (collectively, the
+      "Services").
+    </p>
+    <p>
+      Please read this Privacy Policy carefully. By using the Services, you
+      agree to the collection, use, and sharing of your information as described
+      in this Privacy Policy. If you do not agree with our policies and
+      practices, do not use the Services.
+    </p>
+    <p>
+      We may change our policies and practices from time to time, and we will
+      post any updates on this page. It is important for you to check back
+      regularly to ensure that you are familiar with the latest version.
+    </p>
+    <h2>Information We Collect and How We Use It</h2>
+    <div>
+      <p>
+        We collect a variety of information from and about you when you use the
+        Services. This includes:
+      </p>
+      <p>
+        Information you provide to us directly: We may collect personal
+        information that you voluntarily provide to us, such as your name, email
+        address, and phone number. We may also collect other information that
+        you choose to share with us, such as photos or videos.
+      </p>
+      <p>
+        Information we collect automatically: When you use the Services, we may
+        collect certain information automatically, such as the type of device
+        you are using, your IP address, and information about your device's
+        operating system and browser. We may also collect information about your
+        location, as well as information about your use of the Services, such as
+        the pages you visit and the actions you take within the App.
+      </p>
+      <p>
+        We use the information we collect to provide, maintain, and improve the
+        Services, as well as to personalize your experience. We may also use the
+        information for research and analytics purposes, to communicate with you
+        about the Services or other products and services we think may be of
+        interest to you, and for other business purposes.
+      </p>
+    </div>
+    <h2>Sharing of Your Information</h2>
+    <div>
+      <p>
+        We may share your information with third parties in the following
+        circumstances:
+      </p>
+      <p>
+        With your consent: We may share your information with third parties when
+        you have given us your consent to do so.
+      </p>
+      <p>
+        With service providers: We may share your information with service
+        providers who perform functions on our behalf, such as hosting or
+        maintaining the Services, analyzing data, or providing customer support.
+        These service providers are required to maintain the confidentiality of
+        your information and are not permitted to use it for any other purpose.
+      </p>
+      <p>
+        For legal reasons: We may share your information if we believe it is
+        necessary to comply with a law, regulation, legal process, or
+        governmental request. We may also share your information if we believe
+        it is necessary to protect the safety, rights, or property of PEBET, our
+        users, or the public.
+      </p>
+      <p>
+        In the event of a merger or acquisition: If PEBET is acquired by or
+        merged with another company, we may share your information with that
+        company in order to continue providing the Services.
+      </p>
+    </div>
+    <h2>Children's Privacy</h2>
+    <div>
+      <p>
+        The Services are not intended for children under the age of 13. We do
+        not knowingly collect personal information from children under the age
+        of 13. If we become aware that we have collected personal information
+        from a child under the age of 13, we will take steps to delete such
+        information as soon as possible.
+      </p>
+      <p>
+        It is important to keep in mind that children's online safety is the
+        responsibility of their parents or guardians. It is recommended that
+        parents or guardians closely supervise their children's use of the
+        internet and mobile apps, including the PEBET app.
+      </p>
+      <p>
+        If you are a parent or guardian and you believe that your child under
+        the age of 13 has provided personal information to us, please contact us
+        at
+        <a
+          href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
+          >click here</a
+        >.
+      </p>
+    </div>
+    <h2>Data Retention and Security</h2>
+
+    <div>
+      <p>
+        We retain your information for as long as necessary to provide the App
+        and fulfill the purposes outlined in this Privacy Policy. We take
+        appropriate technical and organizational measures to protect your
+        information against unauthorized or unlawful access, use, alteration, or
+        destruction.
+      </p>
+    </div>
+    <h2>Data Security</h2>
+    <div>
+      <p>
+        We have implemented measures designed to secure your personal
+        information from accidental loss and from unauthorized access, use,
+        alteration, and disclosure. However, we cannot guarantee that
+        unauthorized parties will never be able to defeat those measures or use
+        your personal information for improper purposes.
+      </p>
+      <p>
+        If you have any concerns about the security of your personal
+        information, please contact us at
+        <a
+          href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
+          >click here</a
+        >. We will take reasonable steps to address any concerns you may have.
+      </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style="text-align: center; font-size: 14px">
+      © 2023 PEBET. All rights reserved.
+    </p>
+    <br />
+  </body>
+</html>
