@@ -434,12 +434,21 @@
 
     <!-- Toggle switcher script -->
     <script>
+      console.log("Privacy Policy switcher script loaded.");
+
       function switchApp(app, updateUrl = true) {
+        console.log("switchApp called with:", app, "updateUrl:", updateUrl);
+        
         const pebetBtn = document.getElementById('btn-pebet');
         const calendarBtn = document.getElementById('btn-calendar');
         const pebetPolicy = document.getElementById('policy-pebet');
         const calendarPolicy = document.getElementById('policy-calendar');
         const pageTitle = document.querySelector('title');
+
+        if (!pebetBtn || !calendarBtn || !pebetPolicy || !calendarPolicy) {
+          console.error("DOM Elements not found!", { pebetBtn, calendarBtn, pebetPolicy, calendarPolicy });
+          return;
+        }
 
         if (app === 'calendar') {
           pebetBtn.classList.remove('active');
@@ -451,7 +460,7 @@
             try {
               history.pushState(null, '', '?app=calendar');
             } catch (e) {
-              console.warn("Could not update URL query parameter (running locally?):", e);
+              console.warn("Could not update URL query parameter (likely running locally on file://):", e);
             }
           }
         } else {
@@ -468,12 +477,20 @@
             }
           }
         }
-        // Scroll back to top smoothly when changing tabs
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        try {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch (e) {
+          try {
+            window.scrollTo(0, 0);
+          } catch (err) {
+            console.error("Scroll failed:", err);
+          }
+        }
       }
 
-      // Initialize from URL search parameters on page load
-      window.addEventListener('DOMContentLoaded', () => {
+      function init() {
+        console.log("Initializing policy viewer...");
         const params = new URLSearchParams(window.location.search);
         const app = params.get('app');
         if (app === 'calendar') {
@@ -481,7 +498,14 @@
         } else {
           switchApp('pebet', false);
         }
-      });
+      }
+
+      // Initialize based on ready state
+      if (document.readyState === 'loading') {
+        window.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
     </script>
   </body>
 </html>
