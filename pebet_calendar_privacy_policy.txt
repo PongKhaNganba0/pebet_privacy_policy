@@ -1,50 +1,48 @@
-Privacy Policy [PEBET Calendar]
+Privacy Policy for Pebet Calendar
+Last Updated: June 12, 2026
 
-At PEBET, we are committed to protecting the privacy and security of our users, especially children. This Privacy Policy explains how we collect, use, and share information about you when you use our mobile application (the "App") and any related services provided by PEBET (collectively, the "Services").
+Pebet ("we," "our," or "us") operates the Pebet Calendar mobile application (the "App"). We are committed to protecting your privacy. This Privacy Policy describes how we collect, use, and disclose information when you use our App.
 
-Please read this Privacy Policy carefully. By using the Services, you agree to the collection, use, and sharing of your information as described in this Privacy Policy. If you do not agree with our policies and practices, do not use the Services.
+By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.
 
-We may change our policies and practices from time to time, and we will post any updates on this page. It is important for you to check back regularly to ensure that you are familiar with the latest version.
+1. Information Collection and Use
+Pebet Calendar is designed to be used without requiring you to create an account, register, or provide any directly identifiable personal information (such as your name, email address, or phone number).
 
+However, we use third-party services to monitor and analyze the performance of our App. These services may collect certain non-personally identifiable information automatically.
 
-Information We Collect and How We Use It
+A. Automatically Collected Information
+To help us improve the App, troubleshoot bugs, and understand user engagement, we use third-party services provided by Google:
 
-We collect a variety of information from and about you when you use the Services. This includes:
+Firebase Analytics: Collects anonymous usage data (e.g., app opens, session duration, screen views, and user interactions within the app). This helps us understand which features are most popular and how users interact with the calendar.
+Firebase Crashlytics: Collects crash logs, stack traces, and device performance information when the App experiences a crash or error. This data is entirely anonymous and is used solely to identify and fix technical issues.
 
-Information you provide to us directly: We may collect personal information that you voluntarily provide to us, such as your name, email address, and phone number. We may also collect other information that you choose to share with us, such as photos or videos.
+B. Device Information
+The service providers may automatically collect details about the device you use to access the App, such as:
 
-Information we collect automatically: When you use the Services, we may collect certain information automatically, such as the type of device you are using, your IP address, and information about your device's operating system and browser. We may also collect information about your location, as well as information about your use of the Services, such as the pages you visit and the actions you take within the App.
+Device model and manufacturer
+Operating system version (iOS or Android)
+Unique device identifiers (e.g., Advertising ID)
+IP address (anonymized/truncated)
 
-We use the information we collect to provide, maintain, and improve the Services, as well as to personalize your experience. We may also use the information for research and analytics purposes, to communicate with you about the Services or other products and services we think may be of interest to you, and for other business purposes.
+2. Permissions
+Pebet Calendar may request standard device permissions to function correctly (e.g., network access to initialize Firebase). We do not access sensitive permissions such as your camera, microphone, contacts, location, or local photo gallery.
 
+3. Third-Party Services
+We integrate third-party SDKs that have their own privacy policies governing how they handle data:
 
-Sharing of Your Information
+Google Play Services: Google Play Services Privacy Policy
+Firebase (Analytics & Crashlytics): Privacy and Security in Firebase
 
-We may share your information with third parties in the following circumstances:
+4. Data Retention and Deletion
+Since we do not collect or store personal data (like names or emails) on our own servers, we do not retain any personal information. Analytical data collected by Firebase is stored securely by Google in accordance with Firebase's data retention policies.
 
-With your consent: We may share your information with third parties when you have given us your consent to do so.
+5. Children's Privacy
+Our App is safe for all age groups and does not knowingly collect personally identifiable information from children under the age of 13. If you are a parent or guardian and believe that your child has provided us with personal data, please contact us so we can take steps to remove it.
 
-With service providers: We may share your information with service providers who perform functions on our behalf, such as hosting or maintaining the Services, analyzing data, or providing customer support. These service providers are required to maintain the confidentiality of your information and are not permitted to use it for any other purpose.
+6. Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
 
-For legal reasons: We may share your information if we believe it is necessary to comply with a law, regulation, legal process, or governmental request. We may also share your information if we believe it is necessary to protect the safety, rights, or property of PEBET, our users, or the public.
+7. Contact Us
+If you have any questions or suggestions about this Privacy Policy, please contact us at:
 
-In the event of a merger or acquisition: If PEBET is acquired by or merged with another company, we may share your information with that company in order to continue providing the Services.
-
-
-Children's Privacy
-
-The Services are not intended for children under the age of 13. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have collected personal information from a child under the age of 13, we will take steps to delete such information as soon as possible.
-
-It is important to keep in mind that children's online safety is the responsibility of their parents or guardians. It is recommended that parents or guardians closely supervise their children's use of the internet and mobile apps, including the PEBET Calendar app.
-
-If you are a parent or guardian and you believe that your child under the age of 13 has provided personal information to us, please contact us at pongbelievesyou@gmail.com.
-
-
-Data Retention and Security
-
-We retain your information for as long as necessary to provide the App and fulfill the purposes outlined in this Privacy Policy. We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. However, we cannot guarantee that unauthorized parties will never be able to defeat those measures or use your personal information for improper purposes.
-
-If you have any concerns about the security of your personal information, please contact us at pongbelievesyou@gmail.com. We will take reasonable steps to address any concerns you may have.
-
-
-© 2023 PEBET. All rights reserved.
+Email: pongbelievesyou@gmail.com

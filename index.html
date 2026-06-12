@@ -21,44 +21,45 @@
         font-family: "Roboto Mono";
         font-style: normal;
         font-weight: 300;
-        src: url("fonts/roboto-mono-v12-latin-regular.eot"); /* IE9 Compat Modes */
+        src: url("fonts/roboto-mono-v12-latin-regular.eot");
         src: local("Roboto Mono"), local("RobotoMono-Regular"),
           url("fonts/roboto-mono-v12-latin-regular.eot?#iefix")
             format("embedded-opentype"),
-          /* IE6-IE8 */ url("fonts/roboto-mono-v12-latin-regular.woff2")
-            format("woff2"),
-          /* Super Modern Browsers */
-            url("fonts/roboto-mono-v12-latin-regular.woff") format("woff"),
-          /* Modern Browsers */ url("fonts/roboto-mono-v12-latin-regular.ttf")
-            format("truetype"),
-          /* Safari, Android, iOS */
-            url("fonts/roboto-mono-v12-latin-regular.svg#RobotoMono")
-            format("svg"); /* Legacy iOS */
+          url("fonts/roboto-mono-v12-latin-regular.woff2") format("woff2"),
+          url("fonts/roboto-mono-v12-latin-regular.woff") format("woff"),
+          url("fonts/roboto-mono-v12-latin-regular.ttf") format("truetype"),
+          url("fonts/roboto-mono-v12-latin-regular.svg#RobotoMono")
+            format("svg");
       }
 
       @media (max-width: 600px) {
-        body {
-          font-size: 6px;
-        }
+        body { font-size: 6px; }
+        .tabs { gap: 8px; margin: 10px auto 25px auto; }
+        .tab-btn { font-size: 12px; padding: 10px 12px; }
       }
 
       @media (max-width: 3000px) {
-        body {
-          font-size: 8px;
-        }
+        body { font-size: 8px; }
       }
 
       h1 {
         font-size: 36px;
-        font-weight: 700px;
+        font-weight: 700;
         margin: 40px 0 20px;
         color: #222;
       }
 
       h2 {
         font-size: 24px;
-        font-weight: 800px;
+        font-weight: 800;
         margin: 40px 0 20px;
+        color: #222;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 30px 0 10px;
         color: #222;
       }
 
@@ -69,34 +70,25 @@
       }
 
       ul {
-        margin: 0 10px 5px 50px;
+        margin: 10px 10px 10px 30px;
         padding: 0;
       }
 
       li {
-        margin: 10px 0;
-        font-size: 16px;
+        margin: 8px 0;
+        font-size: 14px;
+        line-height: 1.5;
       }
 
-      code {
-        background-color: #f4f4f4;
-        border-radius: 3px;
-        font-family: monospace;
-        padding: 2px 4px;
+      a { color: #222; }
+
+      .last-updated {
+        font-size: 12px;
+        color: #555;
+        margin: 0 0 30px 0;
       }
 
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      div {
-        margin: 10px auto 50px auto;
-        padding: 0 10px 0 10px;
-      }
-
-      /* Tabs Switcher Styles */
+      /* --- Tab Switcher --- */
       .tabs {
         display: flex;
         justify-content: center;
@@ -104,6 +96,7 @@
         margin: 20px auto 40px auto;
         max-width: 600px;
         padding: 0 10px;
+        box-sizing: border-box;
       }
 
       .tab-btn {
@@ -117,7 +110,7 @@
         padding: 12px 16px;
         cursor: pointer;
         border-radius: 6px;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
         text-align: center;
         outline: none;
       }
@@ -131,52 +124,43 @@
         color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-
-      .hidden {
-        display: none !important;
-      }
-
-      @media (max-width: 600px) {
-        .tabs {
-          gap: 8px;
-          margin: 10px auto 25px auto;
-        }
-        .tab-btn {
-          font-size: 12px;
-          padding: 10px 12px;
-        }
-      }
     </style>
   </head>
 
   <body>
-    <br/>
-    <br/>
+    <br />
+    <br />
 
-    <!-- Toggle Selector Tabs -->
+    <!-- Tab Switcher -->
     <div class="tabs">
-      <button id="btn-pebet" class="tab-btn active" onclick="switchApp('pebet')">PEBET</button>
-      <button id="btn-calendar" class="tab-btn" onclick="switchApp('calendar')">PEBET Calendar</button>
+      <button id="btn-pebet" class="tab-btn active" onclick="switchApp('pebet')">
+        PEBET
+      </button>
+      <button id="btn-calendar" class="tab-btn" onclick="switchApp('calendar')">
+        PEBET Calendar
+      </button>
     </div>
 
-    <!-- ======================================================= -->
-    <!-- 1. PRIVACY POLICY FOR: PEBET (DEFAULT)                  -->
-    <!-- ======================================================= -->
-    <section id="policy-pebet">
+    <!-- ============================================================ -->
+    <!-- POLICY 1: PEBET                                              -->
+    <!-- To edit: update only the content inside this section         -->
+    <!-- ============================================================ -->
+    <section id="policy-pebet" style="display:block">
+
       <h1>Privacy Policy [PEBET]</h1>
       <br />
       <p>
         At PEBET, we are committed to protecting the privacy and security of our
         users, especially children. This Privacy Policy explains how we collect,
         use, and share information about you when you use our mobile application
-        (the "App") and any related services provided by PEBET (collectively, the
-        "Services").
+        (the "App") and any related services provided by PEBET (collectively,
+        the "Services").
       </p>
       <p>
         Please read this Privacy Policy carefully. By using the Services, you
-        agree to the collection, use, and sharing of your information as described
-        in this Privacy Policy. If you do not agree with our policies and
-        practices, do not use the Services.
+        agree to the collection, use, and sharing of your information as
+        described in this Privacy Policy. If you do not agree with our policies
+        and practices, do not use the Services.
       </p>
       <p>
         We may change our policies and practices from time to time, and we will
@@ -184,239 +168,232 @@
         regularly to ensure that you are familiar with the latest version.
       </p>
       <br />
+
       <h2>Information We Collect and How We Use It</h2>
-      <div>
-        <p>
-          We collect a variety of information from and about you when you use the
-          Services. This includes:
-        </p>
-        <p>
-          Information you provide to us directly: We may collect personal
-          information that you voluntarily provide to us, such as your name, email
-          address, and phone number. We may also collect other information that
-          you choose to share with us, such as photos or videos.
-        </p>
-        <p>
-          Information we collect automatically: When you use the Services, we may
-          collect certain information automatically, such as the type of device
-          you are using, your IP address, and information about your device's
-          operating system and browser. We may also collect information about your
-          location, as well as information about your use of the Services, such as
-          the pages you visit and the actions you take within the App.
-        </p>
-        <p>
-          We use the information we collect to provide, maintain, and improve the
-          Services, as well as to personalize your experience. We may also use the
-          information for research and analytics purposes, to communicate with you
-          about the Services or other products and services we think may be of
-          interest to you, and for other business purposes.
-        </p>
-      </div>
+      <p>
+        We collect a variety of information from and about you when you use the
+        Services. This includes:
+      </p>
+      <p>
+        Information you provide to us directly: We may collect personal
+        information that you voluntarily provide to us, such as your name, email
+        address, and phone number. We may also collect other information that
+        you choose to share with us, such as photos or videos.
+      </p>
+      <p>
+        Information we collect automatically: When you use the Services, we may
+        collect certain information automatically, such as the type of device
+        you are using, your IP address, and information about your device's
+        operating system and browser. We may also collect information about your
+        location, as well as information about your use of the Services, such as
+        the pages you visit and the actions you take within the App.
+      </p>
+      <p>
+        We use the information we collect to provide, maintain, and improve the
+        Services, as well as to personalize your experience. We may also use the
+        information for research and analytics purposes, to communicate with you
+        about the Services or other products and services we think may be of
+        interest to you, and for other business purposes.
+      </p>
+
       <h2>Sharing of Your Information</h2>
-      <div>
-        <p>
-          We may share your information with third parties in the following
-          circumstances:
-        </p>
-        <p>
-          With your consent: We may share your information with third parties when
-          you have given us your consent to do so.
-        </p>
-        <p>
-          With service providers: We may share your information with service
-          providers who perform functions on our behalf, such as hosting or
-          maintaining the Services, analyzing data, or providing customer support.
-          These service providers are required to maintain the confidentiality of
-          your information and are not permitted to use it for any other purpose.
-        </p>
-        <p>
-          For legal reasons: We may share your information if we believe it is
-          necessary to comply with a law, regulation, legal process, or
-          governmental request. We may also share your information if we believe
-          it is necessary to protect the safety, rights, or property of PEBET, our
-          users, or the public.
-        </p>
-        <p>
-          In the event of a merger or acquisition: If PEBET is acquired by or
-          merged with another company, we may share your information with that
-          company in order to continue providing the Services.
-        </p>
-      </div>
+      <p>
+        We may share your information with third parties in the following
+        circumstances:
+      </p>
+      <p>
+        With your consent: We may share your information with third parties when
+        you have given us your consent to do so.
+      </p>
+      <p>
+        With service providers: We may share your information with service
+        providers who perform functions on our behalf, such as hosting or
+        maintaining the Services, analyzing data, or providing customer support.
+        These service providers are required to maintain the confidentiality of
+        your information and are not permitted to use it for any other purpose.
+      </p>
+      <p>
+        For legal reasons: We may share your information if we believe it is
+        necessary to comply with a law, regulation, legal process, or
+        governmental request. We may also share your information if we believe
+        it is necessary to protect the safety, rights, or property of PEBET, our
+        users, or the public.
+      </p>
+      <p>
+        In the event of a merger or acquisition: If PEBET is acquired by or
+        merged with another company, we may share your information with that
+        company in order to continue providing the Services.
+      </p>
+
       <h2>Children's Privacy</h2>
-      <div>
-        <p>
-          The Services are not intended for children under the age of 13. We do
-          not knowingly collect personal information from children under the age
-          of 13. If we become aware that we have collected personal information
-          from a child under the age of 13, we will take steps to delete such
-          information as soon as possible.
-        </p>
-        <p>
-          It is important to keep in mind that children's online safety is the
-          responsibility of their parents or guardians. It is recommended that
-          parents or guardians closely supervise their children's use of the
-          internet and mobile apps, including the PEBET app.
-        </p>
-        <p>
-          If you are a parent or guardian and you believe that your child under
-          the age of 13 has provided personal information to us, please contact us
-          at
-          <a
-            href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
-            >click here</a
-          >.
-        </p>
-      </div>
+      <p>
+        The Services are not intended for children under the age of 13. We do
+        not knowingly collect personal information from children under the age
+        of 13. If we become aware that we have collected personal information
+        from a child under the age of 13, we will take steps to delete such
+        information as soon as possible.
+      </p>
+      <p>
+        It is important to keep in mind that children's online safety is the
+        responsibility of their parents or guardians. It is recommended that
+        parents or guardians closely supervise their children's use of the
+        internet and mobile apps, including the PEBET app.
+      </p>
+      <p>
+        If you are a parent or guardian and you believe that your child under
+        the age of 13 has provided personal information to us, please contact us
+        at
+        <a href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services.">
+          click here</a>.
+      </p>
+
       <h2>Data Retention and Security</h2>
-      <div>
-        <p>
-          We retain your information for as long as necessary to provide the App
-          and fulfill the purposes outlined in this Privacy Policy. We have
-          implemented measures designed to secure your personal information from
-          accidental loss and from unauthorized access, use, alteration, and
-          disclosure. However, we cannot guarantee that unauthorized parties will
-          never be able to defeat those measures or use your personal information
-          for improper purposes.
-        </p>
-        <p>
-          If you have any concerns about the security of your personal
-          information, please contact us at
-          <a
-            href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
-            >click here</a
-          >. We will take reasonable steps to address any concerns you may have.
-        </p>
-      </div>
+      <p>
+        We retain your information for as long as necessary to provide the App
+        and fulfill the purposes outlined in this Privacy Policy. We have
+        implemented measures designed to secure your personal information from
+        accidental loss and from unauthorized access, use, alteration, and
+        disclosure. However, we cannot guarantee that unauthorized parties will
+        never be able to defeat those measures or use your personal information
+        for improper purposes.
+      </p>
+      <p>
+        If you have any concerns about the security of your personal
+        information, please contact us at
+        <a href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services.">
+          click here</a>. We will take reasonable steps to address any concerns
+        you may have.
+      </p>
+
     </section>
 
-    <!-- ======================================================= -->
-    <!-- 2. PRIVACY POLICY FOR: PEBET CALENDAR                   -->
-    <!-- ======================================================= -->
-    <section id="policy-calendar" class="hidden">
+    <!-- ============================================================ -->
+    <!-- POLICY 2: PEBET CALENDAR                                     -->
+    <!-- To edit: update only the content inside this section         -->
+    <!-- ============================================================ -->
+    <section id="policy-calendar" style="display:none">
+
       <h1>Privacy Policy [PEBET Calendar]</h1>
-      <br />
+      <p class="last-updated">Last Updated: June 12, 2026</p>
+
       <p>
-        At PEBET, we are committed to protecting the privacy and security of our
-        users, especially children. This Privacy Policy explains how we collect,
-        use, and share information about you when you use our mobile application
-        (the "App") and any related services provided by PEBET (collectively, the
-        "Services").
+        Pebet ("we," "our," or "us") operates the Pebet Calendar mobile
+        application (the "App"). We are committed to protecting your privacy.
+        This Privacy Policy describes how we collect, use, and disclose
+        information when you use our App.
       </p>
       <p>
-        Please read this Privacy Policy carefully. By using the Services, you
-        agree to the collection, use, and sharing of your information as described
-        in this Privacy Policy. If you do not agree with our policies and
-        practices, do not use the Services.
-      </p>
-      <p>
-        We may change our policies and practices from time to time, and we will
-        post any updates on this page. It is important for you to check back
-        regularly to ensure that you are familiar with the latest version.
+        By using the App, you agree to the collection and use of information in
+        accordance with this Privacy Policy.
       </p>
       <br />
-      <h2>Information We Collect and How We Use It</h2>
-      <div>
-        <p>
-          We collect a variety of information from and about you when you use the
-          Services. This includes:
-        </p>
-        <p>
-          Information you provide to us directly: We may collect personal
-          information that you voluntarily provide to us, such as your name, email
-          address, and phone number. We may also collect other information that
-          you choose to share with us, such as photos or videos.
-        </p>
-        <p>
-          Information we collect automatically: When you use the Services, we may
-          collect certain information automatically, such as the type of device
-          you are using, your IP address, and information about your device's
-          operating system and browser. We may also collect information about your
-          location, as well as information about your use of the Services, such as
-          the pages you visit and the actions you take within the App.
-        </p>
-        <p>
-          We use the information we collect to provide, maintain, and improve the
-          Services, as well as to personalize your experience. We may also use the
-          information for research and analytics purposes, to communicate with you
-          about the Services or other products and services we think may be of
-          interest to you, and for other business purposes.
-        </p>
-      </div>
-      <h2>Sharing of Your Information</h2>
-      <div>
-        <p>
-          We may share your information with third parties in the following
-          circumstances:
-        </p>
-        <p>
-          With your consent: We may share your information with third parties when
-          you have given us your consent to do so.
-        </p>
-        <p>
-          With service providers: We may share your information with service
-          providers who perform functions on our behalf, such as hosting or
-          maintaining the Services, analyzing data, or providing customer support.
-          These service providers are required to maintain the confidentiality of
-          your information and are not permitted to use it for any other purpose.
-        </p>
-        <p>
-          For legal reasons: We may share your information if we believe it is
-          necessary to comply with a law, regulation, legal process, or
-          governmental request. We may also share your information if we believe
-          it is necessary to protect the safety, rights, or property of PEBET, our
-          users, or the public.
-        </p>
-        <p>
-          In the event of a merger or acquisition: If PEBET is acquired by or
-          merged with another company, we may share your information with that
-          company in order to continue providing the Services.
-        </p>
-      </div>
-      <h2>Children's Privacy</h2>
-      <div>
-        <p>
-          The Services are not intended for children under the age of 13. We do
-          not knowingly collect personal information from children under the age
-          of 13. If we become aware that we have collected personal information
-          from a child under the age of 13, we will take steps to delete such
-          information as soon as possible.
-        </p>
-        <p>
-          It is important to keep in mind that children's online safety is the
-          responsibility of their parents or guardians. It is recommended that
-          parents or guardians closely supervise their children's use of the
-          internet and mobile apps, including the PEBET Calendar app.
-        </p>
-        <p>
-          If you are a parent or guardian and you believe that your child under
-          the age of 13 has provided personal information to us, please contact us
-          at
-          <a
-            href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
-            >pongbelievesyou@gmail.com</a
-          >.
-        </p>
-      </div>
-      <h2>Data Retention and Security</h2>
-      <div>
-        <p>
-          We retain your information for as long as necessary to provide the App
-          and fulfill the purposes outlined in this Privacy Policy. We have
-          implemented measures designed to secure your personal information from
-          accidental loss and from unauthorized access, use, alteration, and
-          disclosure. However, we cannot guarantee that unauthorized parties will
-          never be able to defeat those measures or use your personal information
-          for improper purposes.
-        </p>
-        <p>
-          If you have any concerns about the security of your personal
-          information, please contact us at
-          <a
-            href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services."
-            >pongbelievesyou@gmail.com</a
-          >. We will take reasonable steps to address any concerns you may have.
-        </p>
-      </div>
+
+      <h2>1. Information Collection and Use</h2>
+      <p>
+        Pebet Calendar is designed to be used without requiring you to create an
+        account, register, or provide any directly identifiable personal
+        information (such as your name, email address, or phone number).
+      </p>
+      <p>
+        However, we use third-party services to monitor and analyze the
+        performance of our App. These services may collect certain
+        non-personally identifiable information automatically.
+      </p>
+
+      <h3>A. Automatically Collected Information</h3>
+      <p>
+        To help us improve the App, troubleshoot bugs, and understand user
+        engagement, we use third-party services provided by Google:
+      </p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics:</strong> Collects anonymous usage data
+          (e.g., app opens, session duration, screen views, and user
+          interactions within the app). This helps us understand which features
+          are most popular and how users interact with the calendar.
+        </li>
+        <li>
+          <strong>Firebase Crashlytics:</strong> Collects crash logs, stack
+          traces, and device performance information when the App experiences a
+          crash or error. This data is entirely anonymous and is used solely to
+          identify and fix technical issues.
+        </li>
+      </ul>
+
+      <h3>B. Device Information</h3>
+      <p>
+        The service providers may automatically collect details about the device
+        you use to access the App, such as:
+      </p>
+      <ul>
+        <li>Device model and manufacturer</li>
+        <li>Operating system version (iOS or Android)</li>
+        <li>Unique device identifiers (e.g., Advertising ID)</li>
+        <li>IP address (anonymized/truncated)</li>
+      </ul>
+
+      <h2>2. Permissions</h2>
+      <p>
+        Pebet Calendar may request standard device permissions to function
+        correctly (e.g., network access to initialize Firebase). We do not
+        access sensitive permissions such as your camera, microphone, contacts,
+        location, or local photo gallery.
+      </p>
+
+      <h2>3. Third-Party Services</h2>
+      <p>
+        We integrate third-party SDKs that have their own privacy policies
+        governing how they handle data:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Play Services:</strong>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            Google Play Services Privacy Policy</a>
+        </li>
+        <li>
+          <strong>Firebase (Analytics &amp; Crashlytics):</strong>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+            Privacy and Security in Firebase</a>
+        </li>
+      </ul>
+
+      <h2>4. Data Retention and Deletion</h2>
+      <p>
+        Since we do not collect or store personal data (like names or emails) on
+        our own servers, we do not retain any personal information. Analytical
+        data collected by Firebase is stored securely by Google in accordance
+        with Firebase's data retention policies.
+      </p>
+
+      <h2>5. Children's Privacy</h2>
+      <p>
+        Our App is safe for all age groups and does not knowingly collect
+        personally identifiable information from children under the age of 13.
+        If you are a parent or guardian and believe that your child has provided
+        us with personal data, please contact us so we can take steps to remove
+        it.
+      </p>
+
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time. We will notify you
+        of any changes by posting the new Privacy Policy on this page and
+        updating the "Last Updated" date. You are advised to review this Privacy
+        Policy periodically for any changes.
+      </p>
+
+      <h2>7. Contact Us</h2>
+      <p>
+        If you have any questions or suggestions about this Privacy Policy,
+        please contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:pongbelievesyou@gmail.com?subject=Inquiry&body=Hello, I have a question about your services.">
+          pongbelievesyou@gmail.com</a>
+      </p>
+
     </section>
 
     <br />
@@ -428,84 +405,41 @@
     <br />
     <br />
     <p style="text-align: center; font-size: 14px">
-      © 2023 PEBET. All rights reserved.
+      © 2026 PEBET. All rights reserved.
     </p>
     <br />
 
-    <!-- Toggle switcher script -->
     <script>
-      console.log("Privacy Policy switcher script loaded.");
-
-      function switchApp(app, updateUrl = true) {
-        console.log("switchApp called with:", app, "updateUrl:", updateUrl);
-        
-        const pebetBtn = document.getElementById('btn-pebet');
-        const calendarBtn = document.getElementById('btn-calendar');
-        const pebetPolicy = document.getElementById('policy-pebet');
-        const calendarPolicy = document.getElementById('policy-calendar');
-        const pageTitle = document.querySelector('title');
-
-        if (!pebetBtn || !calendarBtn || !pebetPolicy || !calendarPolicy) {
-          console.error("DOM Elements not found!", { pebetBtn, calendarBtn, pebetPolicy, calendarPolicy });
-          return;
-        }
+      function switchApp(app) {
+        var pebetSection   = document.getElementById('policy-pebet');
+        var calendarSection = document.getElementById('policy-calendar');
+        var pebetBtn       = document.getElementById('btn-pebet');
+        var calendarBtn    = document.getElementById('btn-calendar');
 
         if (app === 'calendar') {
+          pebetSection.style.display    = 'none';
+          calendarSection.style.display = 'block';
           pebetBtn.classList.remove('active');
           calendarBtn.classList.add('active');
-          pebetPolicy.classList.add('hidden');
-          calendarPolicy.classList.remove('hidden');
-          pageTitle.innerText = "PEBET Calendar || Privacy Policy";
-          if (updateUrl) {
-            try {
-              history.pushState(null, '', '?app=calendar');
-            } catch (e) {
-              console.warn("Could not update URL query parameter (likely running locally on file://):", e);
-            }
-          }
+          document.title = 'PEBET Calendar || Privacy Policy';
         } else {
+          pebetSection.style.display    = 'block';
+          calendarSection.style.display = 'none';
           pebetBtn.classList.add('active');
           calendarBtn.classList.remove('active');
-          pebetPolicy.classList.remove('hidden');
-          calendarPolicy.classList.add('hidden');
-          pageTitle.innerText = "PEBET || Privacy Policy";
-          if (updateUrl) {
-            try {
-              history.pushState(null, '', '?app=pebet');
-            } catch (e) {
-              console.warn("Could not update URL query parameter (running locally?):", e);
-            }
-          }
+          document.title = 'PEBET || Privacy Policy';
         }
-        
-        try {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        } catch (e) {
-          try {
-            window.scrollTo(0, 0);
-          } catch (err) {
-            console.error("Scroll failed:", err);
-          }
-        }
+
+        window.scrollTo(0, 0);
       }
 
-      function init() {
-        console.log("Initializing policy viewer...");
-        const params = new URLSearchParams(window.location.search);
-        const app = params.get('app');
-        if (app === 'calendar') {
-          switchApp('calendar', false);
-        } else {
-          switchApp('pebet', false);
+      // Read ?app= from URL on page load
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('app') === 'calendar') {
+          switchApp('calendar');
         }
-      }
-
-      // Initialize based on ready state
-      if (document.readyState === 'loading') {
-        window.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
+      })();
     </script>
   </body>
 </html>
